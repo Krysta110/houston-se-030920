@@ -25,6 +25,8 @@ Our logic is closely related to our data- we want to combine it
 
 Objects are a combination of data and logic
 
+Object oriented principles are the 
+
 
 
 ### Learning Goal 1: Create a class and instance
