@@ -45,7 +45,7 @@
 
 ### Learning Goal 2: Create getters and setters
 
-##### Time: 0:30
+##### Time: 0:45
 
 ##### Demonstrate
 
@@ -65,7 +65,7 @@
 
 ### Learning Goal 3: Use access macros
 
-##### Time: 0:45
+##### Time: 1:10
 
 ##### Demonstrate
 
@@ -87,7 +87,7 @@
 
 ### Some Final Thoughts
 
-##### Time: 1:00
+##### Time: 1:20
 
 * Is it better to reference a value using an instance variable or it's getter method?
 
