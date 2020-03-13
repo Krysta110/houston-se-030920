@@ -4,7 +4,6 @@ class Owner
         @name = name
     end
 
-
     def dogs
         result = []
         Dog.all.each do | dog |
