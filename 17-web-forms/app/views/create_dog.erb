@@ -1,0 +1,18 @@
+<form method="GET" action="/create-dog" >
+    <%# <input type="hidden" name="_method" value="PATCH" /> %>
+    <div>
+        <label>Name</label>
+        <input name="dog_name" type="text" />
+    </div>
+    <div>
+        <label>Image URL</label>
+        <input name="dog_image" type="text" />
+    </div>
+    <div>
+        <label>Feeding Time</label>
+        <input type="checkbox" name="feeding_times[]" /> Morning
+        <input type="checkbox" name="feeding_times[]" /> Afternoon
+        <input type="checkbox" name="feeding_times[]" /> Evening
+    </div>
+    <input type="submit">
+</form>
