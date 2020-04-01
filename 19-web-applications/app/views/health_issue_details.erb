@@ -1,0 +1,6 @@
+<h1><%= @health_issue.name %></h1>
+<ul>
+<% @health_issue.patients.each do | patient | %>
+    <li><%= patient.name %></li>
+<% end %>
+</ul>

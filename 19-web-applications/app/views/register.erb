@@ -1,0 +1,31 @@
+<form method="POST" action="/patients">
+    <div>
+        <label>Name</label>
+        <input name="name" type="text" />
+    </div>
+    <div>
+        <label>Age</label>
+        <input name="age" type="text" />
+    </div>
+    <div>
+        <label>Gender</label>
+        <select name="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+    </div>
+    <div>
+        <label>Health Issues</label>
+        <% @all_health_issues.each do | health_issue | %>
+            <div>
+                <%= health_issue.name %>
+                <input 
+                    name="health_issue_ids[]"
+                    type="checkbox" 
+                    value="<%= health_issue.id %> %"
+                />
+            </div>
+        <% end %>
+    </div>
+    <input type="submit">
+</form>

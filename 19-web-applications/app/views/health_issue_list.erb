@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+<% @health_issues.each do | health_issue | %>
+    <tr>
+        <td>
+          <a href="/health-issues/<%= health_issue.id %>">
+            <%= health_issue.name %>
+          </a>
+        </td>
+    </tr>    
+<% end %>
+</table>

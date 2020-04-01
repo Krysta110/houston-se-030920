@@ -1,0 +1,21 @@
+<h1><%= @patient.name %></h1>
+<div>
+    Age: <%= @patient.age %>
+    Gender: <%= @patient.gender %>
+</div>
+<ul>
+<% @patient.health_issues.each do | health_issue | %>
+    <li><%= health_issue.name %></li>
+<% end %>
+</ul>
+Add Diagnosis:
+<form method="POST" action="/add-diagnosis/<%= @patient.id %>">
+    <select name="health_issue_id">
+        <% @all_health_issues.each do | health_issue | %>
+            <option value="<%= health_issue.id %>">
+            <%= health_issue.name %>
+            </option>    
+        <% end %>
+        <input type="submit" />
+    </select>
+</form>
