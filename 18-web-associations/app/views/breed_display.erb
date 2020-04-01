@@ -1,0 +1,6 @@
+<h1><%= @breed.name %>s:</h1>
+<ul>
+<% @breed.dogs.each do | dog | %>
+    <li><%= dog.name %>
+<% end %>
+</ul>
