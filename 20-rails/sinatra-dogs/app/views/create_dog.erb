@@ -1,0 +1,29 @@
+
+<form method="POST" action="/create-dog" >
+    <div>
+        <label>Name</label>
+        <input name="dog_name" type="text" />
+    </div>
+    <div>
+        <label>Image URL</label>
+        <input name="dog_image" type="text" />
+    </div>
+    <div>
+        <label>Breed</label>
+        <select name="dog_breed_id" >
+            <% @breeds.each do | breed | %>
+                <option value="<%= breed.id %>"> 
+                    <%= breed.name %>
+                </option>
+            <%  end %>
+        </select>
+    </div>
+    <div>
+        <label>Feeding Times</label>
+        <% @feeding_times.each do | feeding_time | %>
+            <input name="feeding_time_ids[]" value="<%= feeding_time.id%>" type="checkbox" />
+            <%= feeding_time.label %>
+        <% end %>
+    </div>
+    <input type="submit" value="Create Dog"/>
+</form>
