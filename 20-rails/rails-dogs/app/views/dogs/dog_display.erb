@@ -1,0 +1,23 @@
+<style>
+    .header {
+        color: rgb(19, 133, 121);
+        font-size: 50px;
+    }
+
+    .dog-image {
+        width: 25%;
+    }
+</style>
+
+<div>
+    <h1><%= @dog.name %></h1>
+</div>
+<br />
+<div>
+    <img 
+        class="dog-image"
+        src="<%= @dog.img_url %>" 
+    />
+</div>
+
+
