@@ -1,0 +1,21 @@
+<%= form_with( model: @dog ) do | form | %>
+    <div>
+        <label>Name</label>
+        <%= form.text_field(:name) %>
+    </div>
+    <div>
+        <label>Image URL</label>
+        <%= form.text_field(:img_url) %>
+    </div>
+    <div>
+        <!-- Belongs To -->
+        <label>Breed</label>
+        <%= form.collection_select(:breed_id, @breeds, :id, :name) %>
+    </div>
+    <div>
+         <!-- Has Many -->
+        <label>Feeding Times</label>
+        <%= form.collection_check_boxes(:feeding_time_ids, @feeding_times, :id, :label) %>
+    </div>
+    <%= form.submit() %>
+<% end %>
