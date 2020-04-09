@@ -1,0 +1,17 @@
+<h1>Create a Song</h1>
+<form method="POST" action="/songs" >
+    <input 
+        type="hidden" 
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>"
+    />
+    <div>
+        <label>Name</label>
+        <input type="text" name="name" />
+    </div>
+    <div>
+        <label>Album</label>
+        <input type="text" name="album_id" />
+    </div>
+    <input type="submit">
+</form>
