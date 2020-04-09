@@ -1,0 +1,28 @@
+<form method="POST" action="/books" >
+    <div>
+        <label>Title:</label>
+        <input type="text" name="name" />
+    </div>
+    <div>
+        <label>Genre:</label>
+       <select name="genre_id">
+        <% @genres.each do | genre | %>
+            <option value="<%= genre.id %>">
+                <%= genre.name %>
+            </option>
+        <% end %>
+       </select>
+    </div>
+    <div>
+        <label>Author:</label>
+        <% @authors.each do | author | %>
+            <input
+                name="author_ids[]"
+                type="checkbox" 
+                value="<%= author.id %>" 
+            /> 
+            <%= author.name %>
+        <% end %>
+    </div>
+    <input type="submit" />
+</form>

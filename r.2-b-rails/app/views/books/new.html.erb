@@ -1,0 +1,15 @@
+<%= form_with( model: @book ) do | form | %>
+    <div>
+        <label>Title:</label>
+       <%= form.text_field(:name) %>
+    </div>
+     <div>
+        <label>Genre:</label>
+       <%= form.collection_select(:genre_id, @genres, :id, :name ) %>
+    </div>
+     <div>
+        <label>Author:</label>
+       <%= form.collection_check_boxes(:author_ids, @authors, :id, :name ) %>
+    </div>
+    <%= form.submit() %>
+<% end %>

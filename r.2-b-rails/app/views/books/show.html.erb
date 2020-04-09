@@ -1,0 +1,11 @@
+<h1><%= @book.name %></h1>
+<h3>Genre: <%= @book.genre.name %></h3>
+<h3>Authors:</h3>
+<ul>
+<% @book.authors.each do | author | %>
+    <li><%= link_to(author.name, "/authors/#{author.id}") %></li >
+<% end %>
+</ul>
+<%= form_with(method: "DELETE", url: "/books/#{@book.id}") do | form |%>
+    <%= form.submit('Delete') %>
+<% end %>
