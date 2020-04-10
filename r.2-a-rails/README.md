@@ -44,9 +44,9 @@
     - ~~Click on a song to see it's artist, and the album it is apart of ~~
 - ~~List of Albums~~
     - List should be sorted by the number of songs the album has
-- Create a Song
+- ~~Create a Song
     - With an album
-    - With an Artist
+    - With an Artist~~
 - Edit the song 
 - Delete the song
 

@@ -1,3 +1,6 @@
 <h1><%= @song.name %></h1>
 <p>Album: <%= @song.album.name %></p>
 <p>Artist: <%= @song.artist.name %> </p>
+<%= form_with( method: 'DELETE', url: "/songs/#{@song.id}") do | form | %>
+    <%= form.submit('Delete') %>
+<% end %>
