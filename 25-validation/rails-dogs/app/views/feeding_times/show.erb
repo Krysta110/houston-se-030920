@@ -1,0 +1,6 @@
+<h1><%= @feeding_time.label %></h1>
+<ul>
+<% @feeding_time.dogs.each do | dog | %>
+    <li><%= dog.name %>
+<% end %>
+</ul>
