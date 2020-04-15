@@ -1,0 +1,24 @@
+<%= form_with( model: @dog ) do | form | %>
+    <div>
+        <label>Name</label>
+        <%= form.text_field(:name) %>
+        <%= form.error_messages(@dog, :name) if flash[:dog_attributes] %>
+    </div>
+    <div>
+        <label>Image URL</label>
+        <%= form.text_field(:img_url) %>
+        <%= form.error_messages(@dog, :img_url) if flash[:dog_attributes] %>
+    </div>
+    <div>
+        <label>Breed</label>
+        <%= form.collection_select(:breed_id, @breeds, :id, :name) %>
+        <%= form.error_messages(@dog, :breed) if flash[:dog_attributes]%>
+    </div>
+    <div>
+        <label>Feeding Times</label>
+        <%= form.collection_check_boxes(:feeding_time_ids, @feeding_times, :id, :label) %>
+        <%= form.error_messages(@dog, :feeding_times) if flash[:dog_attributes] %>
+    </div>
+    <%= form.submit() %>
+<% end %>
+
