@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <div class="jumbotron">
+            <h1 class="my-header">My Awesome Game</h1>
+        </div>
+        <script> 
+
+            let myHeader = document.querySelector('.my-header')
+            myHeader.innerText = "Hello World"
+
+            let character = document.createElement('img')
+            character.src = "./assets/green-character/static.gif"
+            
+            let rock = document.createElement('img')
+            rock.style.width = "15px"
+            rock.src = "./assets/stone/static.gif"
+
+            document.body.append(
+                rock,
+                character
+            )
+
+        </script>
+    </body>
+</html>
