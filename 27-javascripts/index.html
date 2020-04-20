@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <h1 class="my-header"></h1>
+        <script>
+            let myHeader = document.querySelector('.my-header')
+            myHeader.innerText = "Hello World"
+
+            let characterImages = "./assets/green-character"
+
+            let character = document.createElement('img')
+            character.style.position = "absolute"
+            character.style.top = "150px"
+            character.style.left = "200px" 
+            character.src = `${characterImages}/static.gif`
+            
+            let rock = document.createElement('img')
+            rock.style.position = "absolute"
+            rock.style.width = "15px"
+            rock.src = "./assets/stone/static.gif"
+
+            document.body.append(
+                rock,
+                character
+            )
+
+            let direction = null;
+
+            let move = function(){
+                if(direction == 'left'){
+                    character.style.left = parseFloat(character.style.left) - 0.25 + 'px'
+                }
+            }
+
+            setInterval(move, 60/1000)
+
+            let walkLeft = function(){
+                direction = 'left'
+                character.src = `${characterImages}/walkleft.gif`   
+            }
+
+            let walkUp = function(){
+                character.src = `${characterImages}/walkup.gif`
+            }
+
+            let walkRight = function(){
+                character.src = `${characterImages}/walkright.gif`
+            }
+
+            let walkDown = function(){
+                character.src = `${characterImages}/walkdown.gif`
+            }
+
+            let stop = function(){
+                character.src = `${characterImages}/static.gif`
+            }
+
+        </script>
+    </body>
+</html>
