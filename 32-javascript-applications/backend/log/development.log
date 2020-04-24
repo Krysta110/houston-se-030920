@@ -1,0 +1,902 @@
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAirlines (20200424181411)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "airlines" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200424181411"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTickets (20200424181538)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "tickets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "airline_id" integer, "destination" varchar, "starting_point" varchar, "seat_number" varchar, "date" datetime, "price" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200424181538"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-24 18:16:13.959784"], ["updated_at", "2020-04-24 18:16:13.959784"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTicket Load (0.4ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAirline Create (1.1ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "United"], ["created_at", "2020-04-24 18:22:10.465232"], ["updated_at", "2020-04-24 18:22:10.465232"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAirline Create (0.5ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spirit"], ["created_at", "2020-04-24 18:22:10.472943"], ["updated_at", "2020-04-24 18:22:10.472943"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAirline Create (0.3ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Southwest"], ["created_at", "2020-04-24 18:22:10.477687"], ["updated_at", "2020-04-24 18:22:10.477687"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTicket Create (0.5ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_id", "destination", "starting_point", "seat_number", "date", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["airline_id", 1], ["destination", "New York"], ["starting_point", "Houston"], ["seat_number", "1A"], ["date", "2020-05-01 00:00:00"], ["price", 10.0], ["created_at", "2020-04-24 18:22:10.525421"], ["updated_at", "2020-04-24 18:22:10.525421"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTicket Create (0.4ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_id", "destination", "starting_point", "seat_number", "date", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["airline_id", 2], ["destination", "Newark"], ["starting_point", "Orlando"], ["seat_number", "32A"], ["date", "2020-05-02 00:00:00"], ["price", 5.0], ["created_at", "2020-04-24 18:22:10.533236"], ["updated_at", "2020-04-24 18:22:10.533236"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_id", "destination", "starting_point", "seat_number", "date", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["airline_id", 1], ["destination", "Berlin"], ["starting_point", "Houston"], ["seat_number", "32E"], ["date", "2020-05-10 00:00:00"], ["price", 17.0], ["created_at", "2020-04-24 18:22:10.539234"], ["updated_at", "2020-04-24 18:22:10.539234"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTicket Create (0.4ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_id", "destination", "starting_point", "seat_number", "date", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["airline_id", 3], ["destination", "Mexico City"], ["starting_point", "Houston"], ["seat_number", "16E"], ["date", "2020-05-20 00:00:00"], ["price", 30.0], ["created_at", "2020-04-24 18:22:10.544619"], ["updated_at", "2020-04-24 18:22:10.544619"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ? LIMIT ?[0m  [["airline_id", 1], ["LIMIT", 11]]
+Started GET "/index" for ::1 at 2020-04-24 13:34:22 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/index" for ::1 at 2020-04-24 13:35:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/index" for ::1 at 2020-04-24 13:35:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/airlines" for ::1 at 2020-04-24 13:35:42 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 11.3ms | ActiveRecord: 1.4ms | Allocations: 5243)
+
+
+Started GET "/airline_tickets" for ::1 at 2020-04-24 13:38:54 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/airline_tickets"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/airline_tickets" for ::1 at 2020-04-24 13:39:13 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AirlinesController#airline_tickets as HTML
+Completed 404 Not Found in 8ms (ActiveRecord: 0.7ms | Allocations: 1762)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Airline without an ID):
+  
+app/controllers/airlines_controller.rb:9:in `airline_tickets'
+Started GET "/airline_tickets" for ::1 at 2020-04-24 13:39:43 -0500
+Processing by AirlinesController#airline_tickets as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 128)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Airline without an ID):
+  
+app/controllers/airlines_controller.rb:9:in `airline_tickets'
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 13:40:47 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AirlinesController#airline_tickets as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.4ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 73ms (Views: 37.2ms | ActiveRecord: 3.2ms | Allocations: 13897)
+
+
+Started GET "/airline_tickets/2" for ::1 at 2020-04-24 13:40:52 -0500
+Processing by AirlinesController#airline_tickets as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 2]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1529)
+
+
+Started GET "/airline_tickets/3" for ::1 at 2020-04-24 13:40:54 -0500
+Processing by AirlinesController#airline_tickets as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 3]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1530)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 13:40:59 -0500
+Processing by AirlinesController#airline_tickets as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1743)
+
+
+Started GET "/tickets" for ::1 at 2020-04-24 13:58:41 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/tickets"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/tickets" for ::1 at 2020-04-24 13:59:23 -0500
+Processing by TicketsController#create as */*
+Completed 200 OK in 36ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 10243)
+
+
+Started POST "/tickets" for ::1 at 2020-04-24 14:02:24 -0500
+Processing by TicketsController#create as */*
+  Parameters: {"airline_id"=>1, "destination"=>"Russia", "starting_point"=>"Houston", "seat_number"=>"34y", "date"=>"2020-04-24T19:02:24.973Z", "price"=>14.65, "ticket"=>{"airline_id"=>1, "destination"=>"Russia", "starting_point"=>"Houston", "seat_number"=>"34y", "date"=>"2020-04-24T19:02:24.973Z", "price"=>14.65}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[36mAirline Load (1.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[36mTicket Create (5.8ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_id", "destination", "starting_point", "seat_number", "date", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["airline_id", 1], ["destination", "Russia"], ["starting_point", "Houston"], ["seat_number", "34y"], ["date", "2020-04-24 19:02:24.973000"], ["price", 14.65], ["created_at", "2020-04-24 19:02:24.993761"], ["updated_at", "2020-04-24 19:02:24.993761"]]
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 9.5ms | Allocations: 5961)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:19:38 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 1139)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:20:15 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 0.8ms | Allocations: 5111)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:20:58 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1123)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:24:13 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 1123)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:25:18 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:32:38 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1122)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:32:54 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 1123)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:34:49 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1123)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:37:17 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/United" for ::1 at 2020-04-24 14:37:18 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"United"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+Completed 404 Not Found in 17ms (ActiveRecord: 0.2ms | Allocations: 2363)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Airline with 'id'=United):
+  
+app/controllers/airlines_controller.rb:9:in `airline_tickets'
+Started GET "/airlines" for ::1 at 2020-04-24 14:37:37 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.6ms | Allocations: 1105)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:37:38 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.8ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 57ms (Views: 39.0ms | ActiveRecord: 1.7ms | Allocations: 10604)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:39:36 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:39:36 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1946)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:39:38 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:39:38 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:39:38 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.4ms | Allocations: 1946)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:39:38 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:40:40 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:40:41 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airline_tickets/2" for ::1 at 2020-04-24 14:40:43 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 2]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1533)
+
+
+Started GET "/airline_tickets/3" for ::1 at 2020-04-24 14:40:44 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 3]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1533)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:42:23 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:42:25 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:42:30 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/2" for ::1 at 2020-04-24 14:42:31 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 2]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1533)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:42:33 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1106)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:43:11 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:43:12 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:43:46 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:43:47 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:43:49 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/2" for ::1 at 2020-04-24 14:43:50 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 2]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 1533)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:43:52 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:44:56 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (1.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.0ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:44:57 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:45:11 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:45:12 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.6ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:48:16 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:48:16 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 20ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1949)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:48:51 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:48:53 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:48:57 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:49:00 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:49:02 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 1106)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:49:11 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:49:12 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:49:22 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:50:33 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:50:33 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:50:39 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 1106)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:50:41 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:50:42 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:51:34 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:51:35 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:53:37 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:53:38 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:54:45 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:54:46 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:55:02 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:55:03 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1946)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 14:59:44 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 14:59:52 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 1946)
+
+
+Started POST "/tickets" for ::1 at 2020-04-24 15:00:04 -0500
+Processing by TicketsController#create as */*
+  Parameters: {"airline_id"=>1, "destination"=>"Houston", "starting_point"=>"Brazil", "price"=>"10", "ticket"=>{"airline_id"=>1, "destination"=>"Houston", "starting_point"=>"Brazil", "price"=>"10"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[36mTicket Create (1.5ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_id", "destination", "starting_point", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["airline_id", 1], ["destination", "Houston"], ["starting_point", "Brazil"], ["price", 10.0], ["created_at", "2020-04-24 20:00:04.333430"], ["updated_at", "2020-04-24 20:00:04.333430"]]
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 3.1ms | Allocations: 3736)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 15:00:13 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.4ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 15:00:14 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 2123)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 15:02:09 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.2ms | Allocations: 1109)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 15:02:11 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 2123)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 15:02:18 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 15:02:19 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 2123)
+
+
+Started GET "/airlines" for ::1 at 2020-04-24 15:02:55 -0500
+Processing by AirlinesController#index as */*
+  [1m[36mAirline Load (0.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1106)
+
+
+Started GET "/airline_tickets/1" for ::1 at 2020-04-24 15:02:57 -0500
+Processing by AirlinesController#airline_tickets as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:9:in `airline_tickets'
+  [1m[36mTicket Load (0.5ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."airline_id" = ?[0m  [["airline_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:10:in `airline_tickets'
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.6ms | Allocations: 2123)
+
+
+Started POST "/tickets" for ::1 at 2020-04-24 15:03:02 -0500
+Processing by TicketsController#create as */*
+  Parameters: {"airline_id"=>1, "destination"=>"Houston", "starting_point"=>"Italy", "price"=>"10", "ticket"=>{"airline_id"=>1, "destination"=>"Houston", "starting_point"=>"Italy", "price"=>"10"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[36mTicket Create (0.5ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_id", "destination", "starting_point", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["airline_id", 1], ["destination", "Houston"], ["starting_point", "Italy"], ["price", 10.0], ["created_at", "2020-04-24 20:03:02.568383"], ["updated_at", "2020-04-24 20:03:02.568383"]]
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tickets_controller.rb:4:in `create'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 3.6ms | Allocations: 3343)
+
+
