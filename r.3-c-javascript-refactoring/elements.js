@@ -6,7 +6,7 @@ const isPlain = function(obj){
     }
 }
 
-const createElement = function(tagName){
+const elementCreator = function(tagName){
     return function(...args){
         let element = document.createElement(tagName)
         if(typeof args[0] === 'string'){
@@ -31,7 +31,7 @@ const createElement = function(tagName){
     }
 }
 
-let p = createElement('p')
-let img = createElement('img')
-let button = createElement('button')
-let div = createElement('div')
+let p = elementCreator('p')
+let img = elementCreator('img')
+let button = elementCreator('button')
+let div = elementCreator('div')
