@@ -1,0 +1,2581 @@
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCharacters (20200424145405)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "characters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "x" varchar, "y" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200424145405"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-24 14:54:18.072645"], ["updated_at", "2020-04-24 14:54:18.072645"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x", "y") VALUES (?, ?, ?)[0m  [["name", "Link"], ["x", "100px"], ["y", "100px"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/get-json" for ::1 at 2020-04-24 10:01:04 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#get_json as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 166)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-04-24 10:01:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/get-json" for ::1 at 2020-04-24 10:01:55 -0500
+Processing by CharactersController#get_json as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Started GET "/get-json" for ::1 at 2020-04-24 10:04:03 -0500
+Processing by CharactersController#get_json as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/characterData" for ::1 at 2020-04-24 10:23:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/characterData"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characterData" for ::1 at 2020-04-24 10:24:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/characterData"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characterData" for ::1 at 2020-04-24 10:29:16 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/characterData"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/characterData" for ::1 at 2020-04-24 10:29:24 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+Completed 200 OK in 23ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 3916)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "200px"], ["id", 1]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/characterData" for ::1 at 2020-04-24 10:30:06 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 673)
+
+
+Started GET "/characterData" for ::1 at 2020-04-24 10:34:56 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 659)
+
+
+Started POST "/characterData" for ::1 at 2020-04-24 10:46:41 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"200px", "y"=>"300px", "character"=>{"x"=>"200px", "y"=>"300px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.7ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "300px"], ["id", 1]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 3.1ms | Allocations: 5255)
+
+
+Started POST "/characterData" for ::1 at 2020-04-24 10:47:21 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"200px", "y"=>"300px", "character"=>{"x"=>"200px", "y"=>"300px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 761)
+
+
+Started GET "/characterData" for ::1 at 2020-04-24 11:09:00 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 3350)
+
+
+Started GET "/characterData" for ::1 at 2020-04-24 11:15:39 -0500
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 3840)
+
+
+Started POST "/characterData" for ::1 at 2020-04-24 11:15:54 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"200px", "y"=>"116.75px", "character"=>{"x"=>"200px", "y"=>"116.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "116.75px"], ["id", 1]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 3122)
+
+
+Started GET "/characterData" for ::1 at 2020-04-24 11:16:12 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 677)
+
+
+  [1m[35m (14.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItems (20200424163258)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "character_id" integer, "name" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200424163258"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Create (1.5ms)[0m  [1m[32mINSERT INTO "items" ("character_id", "name") VALUES (?, ?)[0m  [["character_id", 1], ["name", "Master Sword"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("character_id", "name") VALUES (?, ?)[0m  [["character_id", 1], ["name", "Sheild"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("character_id", "name") VALUES (?, ?)[0m  [["character_id", 1], ["name", "Bow"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ? LIMIT ?[0m  [["character_id", 1], ["LIMIT", 11]]
+Started GET "/characterData" for ::1 at 2020-04-24 11:35:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#character_data as HTML
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 3997)
+
+
+Started GET "/characterData" for ::1 at 2020-04-24 11:36:47 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as HTML
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 41ms (Views: 25.1ms | ActiveRecord: 2.6ms | Allocations: 9806)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:19:10 -0500
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 69ms (Views: 51.6ms | ActiveRecord: 2.4ms | Allocations: 14946)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:20:42 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.6ms | Allocations: 1738)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:20:43 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"", "y"=>"", "character"=>{"x"=>"", "y"=>""}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (2.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", ""], ["y", ""], ["id", 1]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 2983)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:20:55 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 1]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1738)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:20:56 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"", "y"=>"", "character"=>{"x"=>"", "y"=>""}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 821)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.7ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "x", "y") VALUES (?, ?, ?)[0m  [["name", "Link"], ["x", "200px"], ["y", "200px"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/characterData" for ::1 at 2020-04-30 05:22:09 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:22:13 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"422px", "y"=>"200px", "character"=>{"x"=>"422px", "y"=>"200px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "422px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 4.3ms | Allocations: 2714)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:22:15 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"422px", "y"=>"278.25px", "character"=>{"x"=>"422px", "y"=>"278.25px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "278.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 3.9ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:22:16 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"526px", "y"=>"278.25px", "character"=>{"x"=>"526px", "y"=>"278.25px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "526px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 2717)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:22:17 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:26:05 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:26:24 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:26:27 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"415.25px", "y"=>"278.25px", "character"=>{"x"=>"415.25px", "y"=>"278.25px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "415.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:26:28 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"415.25px", "y"=>"233px", "character"=>{"x"=>"415.25px", "y"=>"233px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "233px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 3.3ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:26:29 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"364.25px", "y"=>"233px", "character"=>{"x"=>"364.25px", "y"=>"233px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "364.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:26:30 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:26:32 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"321px", "y"=>"233px", "character"=>{"x"=>"321px", "y"=>"233px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.1ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "321px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 3.6ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:26:33 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"320px", "y"=>"178.75px", "character"=>{"x"=>"320px", "y"=>"178.75px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", "320px"], ["y", "178.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2724)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:26:33 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"320px", "y"=>"178.75px", "character"=>{"x"=>"320px", "y"=>"178.75px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 802)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:26:34 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"263.25px", "y"=>"178.75px", "character"=>{"x"=>"263.25px", "y"=>"178.75px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "263.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:26:35 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:30:07 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:30:08 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"296px", "y"=>"178.75px", "character"=>{"x"=>"296px", "y"=>"178.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "296px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:30:09 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"296px", "y"=>"144px", "character"=>{"x"=>"296px", "y"=>"144px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "144px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:30:11 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"422.25px", "y"=>"144px", "character"=>{"x"=>"422.25px", "y"=>"144px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "422.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:30:13 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"422.25px", "y"=>"209.75px", "character"=>{"x"=>"422.25px", "y"=>"209.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "209.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2715)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:30:14 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"467.75px", "y"=>"209.75px", "character"=>{"x"=>"467.75px", "y"=>"209.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.0ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "467.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 4.7ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:30:21 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"467.75px", "y"=>"402px", "character"=>{"x"=>"467.75px", "y"=>"402px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "402px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 4.7ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:30:40 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:30:47 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"431.75px", "y"=>"402px", "character"=>{"x"=>"431.75px", "y"=>"402px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.0ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "431.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 4.7ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:30:48 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"431.75px", "y"=>"359.25px", "character"=>{"x"=>"431.75px", "y"=>"359.25px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "359.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:33:30 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"431.75px", "y"=>"360.5px", "character"=>{"x"=>"431.75px", "y"=>"360.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "360.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:33:30 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"431.75px", "y"=>"360.25px", "character"=>{"x"=>"431.75px", "y"=>"360.25px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "360.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 5077)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:33:31 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"431.75px", "y"=>"360.25px", "character"=>{"x"=>"431.75px", "y"=>"360.25px"}}
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 802)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:33:31 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"431.75px", "y"=>"323px", "character"=>{"x"=>"431.75px", "y"=>"323px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "323px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:33:32 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"466.75px", "y"=>"323px", "character"=>{"x"=>"466.75px", "y"=>"323px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "466.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:33:33 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"466.75px", "y"=>"360.25px", "character"=>{"x"=>"466.75px", "y"=>"360.25px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "360.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 2716)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:42:52 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1539)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:42:55 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"466.75px", "y"=>"200.25px", "character"=>{"x"=>"466.75px", "y"=>"200.25px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "200.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 5.2ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:42:56 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"466.75px", "y"=>"183px", "character"=>{"x"=>"466.75px", "y"=>"183px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "183px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.8ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:43:49 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:43:51 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:43:53 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"466.75px", "y"=>"235.5px", "character"=>{"x"=>"466.75px", "y"=>"235.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "235.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:43:53 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"466.75px", "y"=>"213px", "character"=>{"x"=>"466.75px", "y"=>"213px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "213px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:44:14 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:16 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"466.75px", "y"=>"203.75px", "character"=>{"x"=>"466.75px", "y"=>"203.75px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "203.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 2.9ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:16 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"454px", "y"=>"203.75px", "character"=>{"x"=>"454px", "y"=>"203.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "454px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:16 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"454px", "y"=>"191px", "character"=>{"x"=>"454px", "y"=>"191px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "191px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:17 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"440.75px", "y"=>"191px", "character"=>{"x"=>"440.75px", "y"=>"191px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "440.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:17 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"430.25px", "y"=>"191px", "character"=>{"x"=>"430.25px", "y"=>"191px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "430.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:18 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"430.25px", "y"=>"186px", "character"=>{"x"=>"430.25px", "y"=>"186px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "186px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 2714)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:18 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"430.25px", "y"=>"181.75px", "character"=>{"x"=>"430.25px", "y"=>"181.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "181.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:19 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"493px", "y"=>"184.5px", "character"=>{"x"=>"493px", "y"=>"184.5px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", "493px"], ["y", "184.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 2724)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:20 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"493px", "y"=>"184.5px", "character"=>{"x"=>"493px", "y"=>"184.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 803)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:24 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"492px", "y"=>"438px", "character"=>{"x"=>"492px", "y"=>"438px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", "492px"], ["y", "438px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 3.2ms | Allocations: 2724)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:25 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"492px", "y"=>"438px", "character"=>{"x"=>"492px", "y"=>"438px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 802)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:44:29 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"200px", "y"=>"438px", "character"=>{"x"=>"200px", "y"=>"438px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "200px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:46:48 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"208.75px", "y"=>"438px", "character"=>{"x"=>"208.75px", "y"=>"438px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "208.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:48:14 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:48:16 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"221px", "y"=>"478px", "character"=>{"x"=>"221px", "y"=>"478px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", "221px"], ["y", "478px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 2724)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:48:17 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"221px", "y"=>"491.5px", "character"=>{"x"=>"221px", "y"=>"491.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "491.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 1.4ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:48:17 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"221.75px", "y"=>"491.5px", "character"=>{"x"=>"221.75px", "y"=>"491.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "221.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:48:17 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"221.75px", "y"=>"491.5px", "character"=>{"x"=>"221.75px", "y"=>"491.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 802)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:48:22 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"512.25px", "y"=>"491.5px", "character"=>{"x"=>"512.25px", "y"=>"491.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "512.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:48:22 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"512.25px", "y"=>"478.5px", "character"=>{"x"=>"512.25px", "y"=>"478.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "478.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2912)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:49:02 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:49:06 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"512.25px", "y"=>"337px", "character"=>{"x"=>"512.25px", "y"=>"337px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "337px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:50:08 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:50:11 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"512.25px", "y"=>"283.75px", "character"=>{"x"=>"512.25px", "y"=>"283.75px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "283.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:50:12 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"512.25px", "y"=>"277px", "character"=>{"x"=>"512.25px", "y"=>"277px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "277px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:50:32 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:50:34 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"512.25px", "y"=>"258.5px", "character"=>{"x"=>"512.25px", "y"=>"258.5px"}}
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "258.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 4.3ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:50:35 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"512.25px", "y"=>"287.5px", "character"=>{"x"=>"512.25px", "y"=>"287.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "287.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:50:36 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"512.25px", "y"=>"210.5px", "character"=>{"x"=>"512.25px", "y"=>"210.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "210.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:50:37 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"507.75px", "y"=>"210.5px", "character"=>{"x"=>"507.75px", "y"=>"210.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "507.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:51:14 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:16 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"507.75px", "y"=>"180.75px", "character"=>{"x"=>"507.75px", "y"=>"180.75px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "180.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:17 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"507.75px", "y"=>"199px", "character"=>{"x"=>"507.75px", "y"=>"199px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.1ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "199px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 4.4ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:18 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"507.75px", "y"=>"208.25px", "character"=>{"x"=>"507.75px", "y"=>"208.25px"}}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "208.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 2714)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:51:21 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:22 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"507.75px", "y"=>"190px", "character"=>{"x"=>"507.75px", "y"=>"190px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "190px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:23 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"507.75px", "y"=>"248.75px", "character"=>{"x"=>"507.75px", "y"=>"248.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "248.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:24 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"462.5px", "y"=>"248.75px", "character"=>{"x"=>"462.5px", "y"=>"248.75px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "462.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:25 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"451.25px", "y"=>"248.75px", "character"=>{"x"=>"451.25px", "y"=>"248.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "451.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:25 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"439.5px", "y"=>"248.75px", "character"=>{"x"=>"439.5px", "y"=>"248.75px"}}
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "439.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:25 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"439.5px", "y"=>"242.5px", "character"=>{"x"=>"439.5px", "y"=>"242.5px"}}
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "242.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.4ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:26 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"439.5px", "y"=>"228px", "character"=>{"x"=>"439.5px", "y"=>"228px"}}
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "228px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:26 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"439.5px", "y"=>"215px", "character"=>{"x"=>"439.5px", "y"=>"215px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "215px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:32 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"439.5px", "y"=>"516px", "character"=>{"x"=>"439.5px", "y"=>"516px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "516px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:32 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"451.25px", "y"=>"516px", "character"=>{"x"=>"451.25px", "y"=>"516px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "451.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:51:33 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1514)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:41 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"424.25px", "y"=>"514.5px", "character"=>{"x"=>"424.25px", "y"=>"514.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", "424.25px"], ["y", "514.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 2724)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:41 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"424.25px", "y"=>"514.5px", "character"=>{"x"=>"424.25px", "y"=>"514.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 802)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:42 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"424.25px", "y"=>"445.75px", "character"=>{"x"=>"424.25px", "y"=>"445.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.0ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "445.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 4.4ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:51:43 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"430.25px", "y"=>"445.75px", "character"=>{"x"=>"430.25px", "y"=>"445.75px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "430.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:52:42 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"500px", "y"=>"445.75px", "character"=>{"x"=>"500px", "y"=>"445.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "500px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:52:45 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:53:03 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:59:44 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1539)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:59:49 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"500px", "y"=>"222.5px", "character"=>{"x"=>"500px", "y"=>"222.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "222.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:59:50 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 05:59:55 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:59:58 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"406.75px", "y"=>"222.5px", "character"=>{"x"=>"406.75px", "y"=>"222.5px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.0ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "406.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 4.3ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 05:59:59 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"406.75px", "y"=>"197px", "character"=>{"x"=>"406.75px", "y"=>"197px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "197px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:01 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"492px", "y"=>"199.25px", "character"=>{"x"=>"492px", "y"=>"199.25px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", "492px"], ["y", "199.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 2724)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:01 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"492px", "y"=>"199.25px", "character"=>{"x"=>"492px", "y"=>"199.25px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 803)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:04 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"492px", "y"=>"363.5px", "character"=>{"x"=>"492px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "363.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:08 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"243px", "y"=>"363.5px", "character"=>{"x"=>"243px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "243px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:08 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"256.75px", "y"=>"363.5px", "character"=>{"x"=>"256.75px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "256.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 4.2ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:09 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"247.5px", "y"=>"363.5px", "character"=>{"x"=>"247.5px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "247.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.4ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:11 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"187.75px", "y"=>"363.5px", "character"=>{"x"=>"187.75px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "187.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:11 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"194.25px", "y"=>"363.5px", "character"=>{"x"=>"194.25px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "194.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:00:11 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"202.25px", "y"=>"363.5px", "character"=>{"x"=>"202.25px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "202.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:08:02 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1539)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:08:04 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"220.75px", "y"=>"363.5px", "character"=>{"x"=>"220.75px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "220.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:08:04 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"220.75px", "y"=>"363.5px", "character"=>{"x"=>"220.75px", "y"=>"363.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 802)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:08:04 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"220.75px", "y"=>"341.25px", "character"=>{"x"=>"220.75px", "y"=>"341.25px"}}
+  [1m[36mCharacter Load (0.9ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "341.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:08:05 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"193.75px", "y"=>"341.25px", "character"=>{"x"=>"193.75px", "y"=>"341.25px"}}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "193.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 2715)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:08:06 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:10:16 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:10:36 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:11:50 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"193.75px", "y"=>"351px", "character"=>{"x"=>"193.75px", "y"=>"351px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "351px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 3.4ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:12:03 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:04 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"193.75px", "y"=>"357px", "character"=>{"x"=>"193.75px", "y"=>"357px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "357px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 3.0ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:04 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"193.75px", "y"=>"371px", "character"=>{"x"=>"193.75px", "y"=>"371px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "371px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 2.6ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:08 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"317.5px", "y"=>"370.5px", "character"=>{"x"=>"317.5px", "y"=>"370.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", "317.5px"], ["y", "370.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 2724)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:08 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"317.5px", "y"=>"370.5px", "character"=>{"x"=>"317.5px", "y"=>"370.5px"}}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 802)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:11 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"317.5px", "y"=>"233px", "character"=>{"x"=>"317.5px", "y"=>"233px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "233px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:12:12 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:13 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"317.5px", "y"=>"202.5px", "character"=>{"x"=>"317.5px", "y"=>"202.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "202.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:12:14 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:20 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"317.5px", "y"=>"187px", "character"=>{"x"=>"317.5px", "y"=>"187px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "187px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:12:21 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:12:27 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:33 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"626px", "y"=>"187px", "character"=>{"x"=>"626px", "y"=>"187px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "626px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:34 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"523.75px", "y"=>"187px", "character"=>{"x"=>"523.75px", "y"=>"187px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "523.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.8ms | Allocations: 2712)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:36 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"523.75px", "y"=>"255.75px", "character"=>{"x"=>"523.75px", "y"=>"255.75px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "255.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 06:12:36 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"523.75px", "y"=>"245px", "character"=>{"x"=>"523.75px", "y"=>"245px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.3ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "245px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 2713)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 06:12:38 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 09:57:39 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (1.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 94ms (Views: 40.3ms | ActiveRecord: 3.2ms | Allocations: 8532)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 09:57:54 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1531)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 09:59:12 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1531)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 09:59:36 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1531)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:03:50 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (2.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 2.7ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:04:38 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 1.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:10:52 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 1539)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:11:11 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1531)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:14:06 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.5ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 10:14:09 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"514px", "y"=>"114.5px", "character"=>{"x"=>"514px", "y"=>"114.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (3.8ms)[0m  [1m[33mUPDATE "characters" SET "x" = ?, "y" = ? WHERE "characters"."id" = ?[0m  [["x", "514px"], ["y", "114.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 8.2ms | Allocations: 2967)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 10:14:09 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"514px", "y"=>"114.5px", "character"=>{"x"=>"514px", "y"=>"114.5px"}}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 804)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:14:11 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:14:31 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 10:14:35 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"611px", "y"=>"114.5px", "character"=>{"x"=>"611px", "y"=>"114.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "611px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 20ms (Views: 9.7ms | ActiveRecord: 3.4ms | Allocations: 2714)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 10:14:38 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"611px", "y"=>"114.5px", "character"=>{"x"=>"611px", "y"=>"114.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 802)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 10:14:52 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"611px", "y"=>"114.5px", "character"=>{"x"=>"611px", "y"=>"114.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 805)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:30:13 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1540)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:30:37 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (1.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.4ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:30:55 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:31:04 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:31:48 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 10:44:02 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1539)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:11:50 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 1539)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:13:49 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:16:24 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:17:35 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:18:18 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:18:55 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.7ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:19:14 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:22:39 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:23:42 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:23:51 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:26:36 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:27:10 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:33:52 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1539)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:34:03 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:34:25 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.6ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 11:34:32 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"251.75px", "y"=>"114.5px", "character"=>{"x"=>"251.75px", "y"=>"114.5px"}}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "251.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 11ms (Views: 1.4ms | ActiveRecord: 3.2ms | Allocations: 2715)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:34:34 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1515)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:40:15 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1539)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 11:40:18 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"125.75px", "y"=>"114.5px", "character"=>{"x"=>"125.75px", "y"=>"114.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.2ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "125.75px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 6.9ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-04-30 11:40:19 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 11:40:21 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"125.75px", "y"=>"134.5px", "character"=>{"x"=>"125.75px", "y"=>"134.5px"}}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (1.0ms)[0m  [1m[33mUPDATE "characters" SET "y" = ? WHERE "characters"."id" = ?[0m  [["y", "134.5px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 3.9ms | Allocations: 2713)
+
+
+Started POST "/characterData" for ::1 at 2020-04-30 11:40:22 -0500
+Processing by CharactersController#save_character_data as */*
+  Parameters: {"x"=>"184.25px", "y"=>"134.5px", "character"=>{"x"=>"184.25px", "y"=>"134.5px"}}
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:16:in `save_character_data'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[36mCharacter Update (0.5ms)[0m  [1m[33mUPDATE "characters" SET "x" = ? WHERE "characters"."id" = ?[0m  [["x", "184.25px"], ["id", 2]]
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:17:in `save_character_data'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 3.7ms | Allocations: 2712)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:28:36 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 20ms (Views: 9.3ms | ActiveRecord: 1.0ms | Allocations: 8533)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:28:44 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1531)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:28:49 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 1.2ms | Allocations: 1531)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:32:45 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1531)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:34:15 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:40:11 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1539)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:49:26 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1551)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:49:40 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:55:35 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:55:55 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:56:09 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 09:56:21 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 10:34:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1539)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 10:35:08 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 10:35:15 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 10:35:54 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
+Started GET "/characterData" for ::1 at 2020-05-01 10:36:13 -0500
+Processing by CharactersController#character_data as */*
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  ↳ app/controllers/characters_controller.rb:11:in `character_data'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."character_id" = ?[0m  [["character_id", 2]]
+  ↳ app/controllers/characters_controller.rb:12:in `character_data'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1513)
+
+
