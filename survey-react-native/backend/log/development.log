@@ -1,0 +1,2478 @@
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 21:45:52 -0500
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 21:46:06 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 21:46:21 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 21:48:28 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 21:48:56 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/poems" for 192.168.0.105 at 2020-05-30 21:52:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/poems" for 192.168.0.105 at 2020-05-30 21:53:40 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 21:54:06 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePoems (20200509025551)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "poems" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "content" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200509025551"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDevices (20200530195422)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "devices" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "push_token_id" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200530195422"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-31 02:54:36.233929"], ["updated_at", "2020-05-31 02:54:36.233929"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 21:55:06 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+  [1m[36mDevice Create (0.5ms)[0m  [1m[32mINSERT INTO "devices" ("push_token_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["created_at", "2020-05-31 02:55:06.105044"], ["updated_at", "2020-05-31 02:55:06.105044"]]
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 2.1ms | Allocations: 5225)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 21:55:10 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.5ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 02:55:10.412969"], ["updated_at", "2020-05-31 02:55:10.412969"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.8ms | Allocations: 6704)
+
+
+  
+NoMethodError (undefined method `stringify' for JSON:Module):
+  
+app/controllers/poems_controller.rb:26:in `block in create'
+app/controllers/poems_controller.rb:9:in `create'
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 21:56:13 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.4ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 02:56:13.629820"], ["updated_at", "2020-05-31 02:56:13.629820"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 575ms (ActiveRecord: 3.4ms | Allocations: 16146)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/poems_controller.rb:20:in `block in create'
+app/controllers/poems_controller.rb:9:in `create'
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 21:57:10 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.4ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 02:57:10.129126"], ["updated_at", "2020-05-31 02:57:10.129126"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 343ms (ActiveRecord: 3.2ms | Allocations: 84383)
+
+
+  
+NameError (undefined local variable or method `err' for #<PoemsController:0x00007fc5820ecf78>):
+  
+app/controllers/poems_controller.rb:29:in `rescue in block in create'
+app/controllers/poems_controller.rb:19:in `block in create'
+app/controllers/poems_controller.rb:9:in `create'
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 21:57:30 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.4ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 02:57:30.373403"], ["updated_at", "2020-05-31 02:57:30.373403"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:9:in `create'
+Completed 200 OK in 195ms (Views: 0.6ms | ActiveRecord: 3.2ms | Allocations: 14111)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 21:59:36 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.4ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 02:59:36.714917"], ["updated_at", "2020-05-31 02:59:36.714917"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 316ms (Views: 0.7ms | ActiveRecord: 3.6ms | Allocations: 14211)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 22:01:37 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+  [1m[36mDevice Create (0.4ms)[0m  [1m[32mINSERT INTO "devices" ("push_token_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["created_at", "2020-05-31 03:01:37.759691"], ["updated_at", "2020-05-31 03:01:37.759691"]]
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 2351)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 22:01:56 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+  [1m[36mDevice Create (0.5ms)[0m  [1m[32mINSERT INTO "devices" ("push_token_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["created_at", "2020-05-31 03:01:56.279824"], ["updated_at", "2020-05-31 03:01:56.279824"]]
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 2327)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 22:01:59 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.5ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 03:01:59.502995"], ["updated_at", "2020-05-31 03:01:59.502995"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 841ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 14413)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 22:02:31 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+  [1m[36mDevice Create (0.5ms)[0m  [1m[32mINSERT INTO "devices" ("push_token_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["created_at", "2020-05-31 03:02:31.053617"], ["updated_at", "2020-05-31 03:02:31.053617"]]
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/devices_controller.rb:3:in `create'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 4.0ms | Allocations: 2343)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 22:02:32 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.4ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 03:02:32.483943"], ["updated_at", "2020-05-31 03:02:32.483943"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 966ms (Views: 0.5ms | ActiveRecord: 3.1ms | Allocations: 17419)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 22:02:55 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.5ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 03:02:55.610989"], ["updated_at", "2020-05-31 03:02:55.610989"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 1155ms (Views: 0.5ms | ActiveRecord: 3.2ms | Allocations: 17413)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 22:03:13 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.6ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 03:03:13.202349"], ["updated_at", "2020-05-31 03:03:13.202349"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 974ms (Views: 0.6ms | ActiveRecord: 3.4ms | Allocations: 17421)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT "devices".* FROM "devices" ORDER BY "devices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDevice Destroy (3.3ms)[0m  [1m[31mDELETE FROM "devices" WHERE "devices"."id" = ?[0m  [["id", 4]]
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT "devices".* FROM "devices" ORDER BY "devices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDevice Destroy (4.1ms)[0m  [1m[31mDELETE FROM "devices" WHERE "devices"."id" = ?[0m  [["id", 3]]
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT "devices".* FROM "devices" ORDER BY "devices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDevice Destroy (4.3ms)[0m  [1m[31mDELETE FROM "devices" WHERE "devices"."id" = ?[0m  [["id", 2]]
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+Started POST "/devices" for 192.168.0.101 at 2020-05-30 22:05:44 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 5ms (ActiveRecord: 0.8ms | Allocations: 3420)
+
+
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+Started POST "/poems" for 192.168.0.105 at 2020-05-30 22:06:08 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.6ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 03:06:08.528580"], ["updated_at", "2020-05-31 03:06:08.528580"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 264ms (Views: 0.8ms | ActiveRecord: 3.4ms | Allocations: 11223)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:06:38 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 679)
+
+
+Started POST "/poems" for 192.168.0.101 at 2020-05-31 11:06:43 -0500
+Processing by PoemsController#create as HTML
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.6ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:06:43.674497"], ["updated_at", "2020-05-31 16:06:43.674497"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 260ms (Views: 0.5ms | ActiveRecord: 3.5ms | Allocations: 8207)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:20:08 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms | Allocations: 679)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:21:26 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:21:46 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 3ms (ActiveRecord: 0.1ms | Allocations: 663)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:21:56 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:22:18 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 663)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:22:34 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:23:04 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:23:10 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 663)
+
+
+Started POST "/poems" for 192.168.0.101 at 2020-05-31 11:23:12 -0500
+Processing by PoemsController#create as HTML
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.4ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:23:12.072946"], ["updated_at", "2020-05-31 16:23:12.072946"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 380ms (Views: 0.2ms | ActiveRecord: 2.6ms | Allocations: 8376)
+
+
+Started POST "/poems" for 192.168.0.101 at 2020-05-31 11:23:23 -0500
+Processing by PoemsController#create as HTML
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.8ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:23:23.717185"], ["updated_at", "2020-05-31 16:23:23.717185"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 246ms (Views: 0.6ms | ActiveRecord: 3.4ms | Allocations: 8369)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:23:57 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 663)
+
+
+Started POST "/poems" for 192.168.0.101 at 2020-05-31 11:24:00 -0500
+Processing by PoemsController#create as HTML
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.6ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:24:00.377821"], ["updated_at", "2020-05-31 16:24:00.377821"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 290ms (Views: 0.3ms | ActiveRecord: 4.0ms | Allocations: 8179)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:24:42 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/poems" for 192.168.0.101 at 2020-05-31 11:24:43 -0500
+Processing by PoemsController#create as HTML
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.9ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:24:43.876103"], ["updated_at", "2020-05-31 16:24:43.876103"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 260ms (Views: 0.5ms | ActiveRecord: 4.3ms | Allocations: 8183)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:24:55 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/poems" for 192.168.0.101 at 2020-05-31 11:24:59 -0500
+Processing by PoemsController#create as HTML
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.7ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:24:59.152637"], ["updated_at", "2020-05-31 16:24:59.152637"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 264ms (Views: 0.3ms | ActiveRecord: 4.1ms | Allocations: 8180)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:25:26 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 663)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-31 11:25:34 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.5ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:25:34.866160"], ["updated_at", "2020-05-31 16:25:34.866160"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 287ms (Views: 0.5ms | ActiveRecord: 3.2ms | Allocations: 8184)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-31 11:25:54 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.9ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:25:54.533106"], ["updated_at", "2020-05-31 16:25:54.533106"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 252ms (Views: 0.7ms | ActiveRecord: 3.6ms | Allocations: 8185)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-31 11:26:03 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.5ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:26:03.646860"], ["updated_at", "2020-05-31 16:26:03.646860"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 297ms (Views: 0.5ms | ActiveRecord: 3.2ms | Allocations: 8369)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:26:25 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:27:58 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 663)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:28:42 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-31 11:28:58 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.6ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:28:58.265370"], ["updated_at", "2020-05-31 16:28:58.265370"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 385ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 8376)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:29:20 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 663)
+
+
+Started POST "/poems" for 192.168.0.101 at 2020-05-31 11:29:34 -0500
+Processing by PoemsController#create as HTML
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.5ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:29:34.609930"], ["updated_at", "2020-05-31 16:29:34.609930"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 247ms (Views: 0.5ms | ActiveRecord: 3.2ms | Allocations: 8186)
+
+
+Started POST "/poems" for 192.168.0.101 at 2020-05-31 11:38:01 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#create as HTML
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.5ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:38:01.531751"], ["updated_at", "2020-05-31 16:38:01.531751"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 219ms (Views: 0.6ms | ActiveRecord: 3.1ms | Allocations: 8194)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-31 11:39:18 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.8ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:39:18.389547"], ["updated_at", "2020-05-31 16:39:18.389547"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 265ms (Views: 0.5ms | ActiveRecord: 3.4ms | Allocations: 8187)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-31 11:39:24 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.5ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:39:24.843962"], ["updated_at", "2020-05-31 16:39:24.843962"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 297ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 8371)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-31 11:39:31 -0500
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.4ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:39:31.391314"], ["updated_at", "2020-05-31 16:39:31.391314"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 255ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 8366)
+
+
+Started POST "/poems" for 192.168.0.105 at 2020-05-31 11:41:15 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PoemsController#create as */*
+  Parameters: {"name"=>"New Poem", "content"=>"Some Poem Something", "poem"=>{"name"=>"New Poem", "content"=>"Some Poem Something"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mPoem Create (0.3ms)[0m  [1m[32mINSERT INTO "poems" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Poem"], ["content", "Some Poem Something"], ["created_at", "2020-05-31 16:41:15.896400"], ["updated_at", "2020-05-31 16:41:15.896400"]]
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/poems_controller.rb:3:in `create'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  ↳ app/controllers/poems_controller.rb:8:in `create'
+Completed 200 OK in 238ms (Views: 0.6ms | ActiveRecord: 2.5ms | Allocations: 14071)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:41:28 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "device"=>{"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/devices_controller.rb:4:in `create'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 688)
+
+
+Started POST "/devices" for 192.168.0.101 at 2020-05-31 11:56:07 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDogsTable (20200320184031)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "dogs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image_url" varchar, "likes" integer, "owner_id" integer)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200320184031"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsersTable (20200320185317)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200320185317"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDevices (20200531165823)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "devices" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "push_token_id" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200531165823"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-31 18:00:13.571963"], ["updated_at", "2020-05-31 18:00:13.571963"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest") VALUES (?, ?)[0m  [["username", "joshua"], ["password_digest", "$2a$12$oJG9T0cgW8kEvDtNU38cCueLXgaF4wRWJON1FV4jeHHDlFSOnWQN2"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDogsTable (20200320184031)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "dogs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image_url" varchar, "likes" integer, "user_id" integer)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200320184031"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsersTable (20200320185317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200320185317"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDevices (20200531165823)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "devices" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "push_token_id" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200531165823"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-31 18:04:25.377755"], ["updated_at", "2020-05-31 18:04:25.377755"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest") VALUES (?, ?)[0m  [["username", "joshua@christetulit.org"], ["password_digest", "$2a$12$MxTfs7cLvnp/yiCKqgq9/.v0LbScEw.tSENYaIdSTmsXQ9i7x1zba"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest") VALUES (?, ?)[0m  [["username", "joshua@christetulit.org"], ["password_digest", "$2a$12$2eOD//kw5US95nMBwPLDcuo.z3T0xKXc7At0YPqDnLhP1E40PYsOq"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Create (0.4ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "image_url", "likes", "user_id") VALUES (?, ?, ?, ?)[0m  [["name", "Tess"], ["image_url", "https://res.cloudinary.com/jmiles/image/upload/v1585587772/lecture-assets/master/appendix/doggos/tess.jpg"], ["likes", 0], ["user_id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Create (0.4ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "image_url", "likes", "user_id") VALUES (?, ?, ?, ?)[0m  [["name", "Rizzo"], ["image_url", "https://res.cloudinary.com/jmiles/image/upload/v1585587772/lecture-assets/master/appendix/doggos/rizzo.jpg"], ["likes", 0], ["user_id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Create (0.3ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "image_url", "likes", "user_id") VALUES (?, ?, ?, ?)[0m  [["name", "Pip"], ["image_url", "https://res.cloudinary.com/jmiles/image/upload/v1585587772/lecture-assets/master/appendix/doggos/pip.jpg"], ["likes", 0], ["user_id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Destroy (0.4ms)[0m  [1m[31mDELETE FROM "dogs" WHERE "dogs"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Destroy (0.3ms)[0m  [1m[31mDELETE FROM "dogs" WHERE "dogs"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Destroy (0.3ms)[0m  [1m[31mDELETE FROM "dogs" WHERE "dogs"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest") VALUES (?, ?)[0m  [["username", "joshua@christetulit.org"], ["password_digest", "$2a$12$E7duyPJ9RdsWBUmcjsT45OHX8UoVI7GKU9Csq3Jt44eENFwdSj.Wa"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Create (0.4ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "image_url", "likes", "user_id") VALUES (?, ?, ?, ?)[0m  [["name", "Tess"], ["image_url", "https://res.cloudinary.com/jmiles/image/upload/v1585587772/lecture-assets/master/appendix/doggos/tess.jpg"], ["likes", 0], ["user_id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Create (0.3ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "image_url", "likes", "user_id") VALUES (?, ?, ?, ?)[0m  [["name", "Rizzo"], ["image_url", "https://res.cloudinary.com/jmiles/image/upload/v1585587772/lecture-assets/master/appendix/doggos/rizzo.jpg"], ["likes", 0], ["user_id", 3]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDog Create (0.3ms)[0m  [1m[32mINSERT INTO "dogs" ("name", "image_url", "likes", "user_id") VALUES (?, ?, ?, ?)[0m  [["name", "Pip"], ["image_url", "https://res.cloudinary.com/jmiles/image/upload/v1585587772/lecture-assets/master/appendix/doggos/pip.jpg"], ["likes", 0], ["user_id", 3]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:23:52 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#profile as */*
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 2769)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:27:07 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#profile as */*
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 2771)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:27:44 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 169)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:28:04 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 169)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:28:22 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 169)
+
+
+Started POST "/login" for 192.168.0.105 at 2020-05-31 13:28:29 -0500
+Processing by UsersController#login as */*
+  Parameters: {"name"=>"joshua@christetult.org", "password"=>"[FILTERED]", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `login'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 871)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:28:51 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started POST "/login" for 192.168.0.105 at 2020-05-31 13:29:01 -0500
+Processing by UsersController#login as */*
+  Parameters: {"name"=>"joshua@christetulit.org", "password"=>"[FILTERED]", "user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `login'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 779)
+
+
+Started POST "/login" for 192.168.0.105 at 2020-05-31 13:29:21 -0500
+Processing by UsersController#login as */*
+  Parameters: {"name"=>"joshua", "password"=>"[FILTERED]", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `login'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 789)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/login" for 192.168.0.105 at 2020-05-31 13:29:55 -0500
+Processing by UsersController#login as */*
+  Parameters: {"name"=>"joshua@christetulit.org", "password"=>"[FILTERED]", "user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `login'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 787)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/login" for 192.168.0.105 at 2020-05-31 13:31:05 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#login as */*
+  Parameters: {"name"=>"joshua@christetulit.org", "password"=>"[FILTERED]", "user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `login'
+Completed 200 OK in 450ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 55371)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:32:12 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#profile as */*
+Completed 200 OK in 24ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 2772)
+
+
+Started POST "/login" for 192.168.0.105 at 2020-05-31 13:32:33 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#login as */*
+  Parameters: {"name"=>"joshua@christetulit.org", "password"=>"[FILTERED]", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `login'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 928)
+
+
+Started POST "/login" for 192.168.0.105 at 2020-05-31 13:32:48 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#login as */*
+  Parameters: {"name"=>"joshua@christetulit.org", "password"=>"[FILTERED]", "user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `login'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 868)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:33:08 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 285)
+
+
+Started POST "/login" for 192.168.0.105 at 2020-05-31 13:33:21 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"joshua@christetulit.org", "password"=>"[FILTERED]", "user"=>{"username"=>"joshua@christetulit.org"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joshua@christetulit.org"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `login'
+Completed 200 OK in 235ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 2717)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:33:25 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 937)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:39:27 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#profile as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 160)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:41:34 -0500
+Processing by UsersController#profile as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 159)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:41:58 -0500
+Processing by UsersController#profile as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 159)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:42:45 -0500
+Processing by UsersController#profile as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 159)
+
+
+Started POST "/login" for 192.168.0.101 at 2020-05-31 13:43:13 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"joshua@christetulit.org", "password"=>"[FILTERED]", "user"=>{"username"=>"joshua@christetulit.org"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joshua@christetulit.org"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `login'
+Completed 200 OK in 226ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 766)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:44:06 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 809)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:44:29 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 803)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:44:42 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 800)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:45:11 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 798)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:45:17 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 810)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:45:28 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 804)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:46:32 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 798)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:47:14 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 805)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:47:35 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 800)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:52:58 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 35ms (Views: 1.9ms | ActiveRecord: 1.1ms | Allocations: 5424)
+
+
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" ORDER BY "devices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:56:36 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 821)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:57:28 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 824)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 13:58:10 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 802)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:58:23 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 825)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 13:59:27 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 4557)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:00:32 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 798)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:01:14 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 807)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:01:25 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 806)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:02:44 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 807)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:03:32 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 808)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:03:32 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `add_device'
+  [1m[36mDevice Create (0.7ms)[0m  [1m[32mINSERT INTO "devices" ("user_id", "push_token_id") VALUES (?, ?)[0m  [["user_id", 3], ["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"]]
+  ↳ app/controllers/users_controller.rb:19:in `add_device'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:19:in `add_device'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 7295)
+
+
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT "devices".* FROM "devices" ORDER BY "devices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:12:32 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 4219)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:12:39 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 804)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:12:39 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2909)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:20:42 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+Zeitwerk::NameError (expected file /Users/joshua.miles/Documents/Development/react-native-lecture-exercises/backend/app/controllers/dogs_controller.rb to define constant DogsController, but didn't):
+  
+zeitwerk (2.3.0) lib/zeitwerk/loader/callbacks.rb:17:in `on_file_autoloaded'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:17:in `block in require'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:16:in `tap'
+zeitwerk (2.3.0) lib/zeitwerk/kernel.rb:16:in `require'
+activesupport (6.0.3) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/dogs" for 127.0.0.1 at 2020-05-31 14:21:35 -0500
+  
+ActionController::RoutingError (uninitialized constant DogsController
+Did you mean?  PoemsController):
+  
+actionpack (6.0.3) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/dogs" for 127.0.0.1 at 2020-05-31 14:21:48 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.7ms | Allocations: 5161)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-05-31 14:21:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:21:57 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:21:57 -0500
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1362)
+
+
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4352)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:21:58 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 3151)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:22:59 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1063)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:23:24 -0500
+Processing by DogsController#index as HTML
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:23:24 -0500
+  [1m[36mDog Load (3.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 3.2ms | Allocations: 2284)
+
+
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 815)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:23:54 -0500
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:23:54 -0500
+Processing by DogsController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1995)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:24:05 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1066)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:24:05 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 804)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:24:28 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1063)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:24:29 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:24:29 -0500
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1281)
+
+
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 804)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:24:40 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1063)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:24:41 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1065)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:24:41 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 803)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:25:41 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1063)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:26:27 -0500
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:26:27 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1380)
+
+
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 941)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:26:27 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 676)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:26:34 -0500
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:26:34 -0500
+Processing by DogsController#index as HTML
+Processing by UsersController#profile as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1419)
+
+
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 2236)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:26:34 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 666)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:31:29 -0500
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:31:29 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 6802)
+
+
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.8ms | Allocations: 7136)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:31:30 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 3149)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:31:46 -0500
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:31:46 -0500
+Processing by UsersController#profile as HTML
+Processing by DogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1594)
+
+
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1673)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:31:46 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1063)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:31:46 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 805)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:31:46 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 676)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:31:46 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 666)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:31:48 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 1063)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:31:48 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 800)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:31:48 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1063)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:31:48 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 45ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 800)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:31:48 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 666)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:31:49 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 666)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:32:03 -0500
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:32:03 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Processing by DogsController#index as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 1128)
+
+
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1385)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:32:03 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 666)
+
+
+Started PATCH "/dogs/4" for 192.168.0.101 at 2020-05-31 14:33:07 -0500
+Processing by DogsController#update as HTML
+  Parameters: {"likes"=>1, "id"=>"4", "dog"=>{"likes"=>1}}
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:37:in `update'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 867)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'content' for Dog.):
+  
+app/controllers/dogs_controller.rb:38:in `update'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:34:15 -0500
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:34:15 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DogsController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.8ms | Allocations: 7610)
+
+
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 8878)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:34:17 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.4ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1081)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:34:17 -0500
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 804)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:34:41 -0500
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:34:41 -0500
+Processing by UsersController#profile as HTML
+Processing by DogsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1560)
+
+
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 1653)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:34:41 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 3149)
+
+
+Started PATCH "/dogs/4" for 192.168.0.101 at 2020-05-31 14:35:00 -0500
+Processing by DogsController#update as HTML
+  Parameters: {"likes"=>1, "id"=>"4", "dog"=>{"likes"=>1}}
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:37:in `update'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 854)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'content' for Dog.):
+  
+app/controllers/dogs_controller.rb:38:in `update'
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:35:06 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:35:06 -0500
+  ↳ app/controllers/dogs_controller.rb:28:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1302)
+
+
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 818)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:37:00 -0500
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:37:00 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 5435)
+
+
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 45ms (Views: 27.4ms | ActiveRecord: 2.4ms | Allocations: 5222)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:37:09 -0500
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:37:09 -0500
+Processing by DogsController#index as HTML
+Processing by UsersController#profile as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 1754)
+
+
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1786)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:37:10 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 3198)
+
+
+Started PATCH "/dogs/4" for 192.168.0.101 at 2020-05-31 14:37:13 -0500
+Processing by DogsController#update as HTML
+  Parameters: {"likes"=>1, "id"=>"4", "dog"=>{"likes"=>1}}
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:7:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDog Update (0.4ms)[0m  [1m[33mUPDATE "dogs" SET "likes" = ? WHERE "dogs"."id" = ?[0m  [["likes", 1], ["id", 4]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.5ms | Allocations: 7775)
+
+
+  
+NoMethodError (undefined method `owner' for #<Dog:0x00007fbeb74c1d50>):
+  
+app/controllers/dogs_controller.rb:13:in `update'
+Started GET "/dogs" for 192.168.0.105 at 2020-05-31 14:37:31 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/profile" for 192.168.0.105 at 2020-05-31 14:37:31 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.8ms | Allocations: 5046)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 4573)
+
+
+Started PATCH "/dogs/4" for 192.168.0.105 at 2020-05-31 14:37:37 -0500
+Processing by DogsController#update as */*
+  Parameters: {"likes"=>2, "id"=>"4", "dog"=>{"likes"=>2}}
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:7:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDog Update (1.2ms)[0m  [1m[33mUPDATE "dogs" SET "likes" = ? WHERE "dogs"."id" = ?[0m  [["likes", 2], ["id", 4]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/dogs_controller.rb:13:in `update'
+Completed 200 OK in 327ms (Views: 0.2ms | ActiveRecord: 5.7ms | Allocations: 19711)
+
+
+Started PATCH "/dogs/4" for 192.168.0.101 at 2020-05-31 14:37:52 -0500
+Processing by DogsController#update as HTML
+  Parameters: {"likes"=>2, "id"=>"4", "dog"=>{"likes"=>2}}
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:7:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/dogs_controller.rb:13:in `update'
+Completed 200 OK in 231ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 7104)
+
+
+Started PATCH "/dogs/4" for 192.168.0.105 at 2020-05-31 14:38:33 -0500
+Processing by DogsController#update as */*
+  Parameters: {"likes"=>3, "id"=>"4", "dog"=>{"likes"=>3}}
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:7:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDog Update (0.6ms)[0m  [1m[33mUPDATE "dogs" SET "likes" = ? WHERE "dogs"."id" = ?[0m  [["likes", 3], ["id", 4]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDevice Load (0.1ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/dogs_controller.rb:13:in `update'
+Completed 200 OK in 334ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 10922)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-05-31 14:38:42 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1079)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-05-31 14:38:42 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 802)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-05-31 14:38:42 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 787)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:12:22 -0500
+Started GET "/dogs" for 192.168.0.105 at 2020-06-01 17:12:22 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#profile as */*
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.6ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 57ms (Views: 38.2ms | ActiveRecord: 1.5ms | Allocations: 5626)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 123ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 11150)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-06-01 17:12:44 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (1.0ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 1.0ms | Allocations: 1097)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:12:44 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 174)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-06-01 17:12:46 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1065)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-06-01 17:14:52 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.1ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1064)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-06-01 17:14:52 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 803)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-06-01 17:15:18 -0500
+Started GET "/dogs" for 192.168.0.101 at 2020-06-01 17:15:18 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.4ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 1375)
+
+
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 830)
+
+
+Started GET "/dogs" for 192.168.0.101 at 2020-06-01 17:15:46 -0500
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1071)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-06-01 17:15:46 -0500
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 805)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:16:14 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:16:17 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 162)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:17:27 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:18:28 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:18:37 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:19:52 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:19:56 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:22:21 -0500
+Processing by UsersController#profile as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started POST "/login" for 192.168.0.105 at 2020-06-01 17:22:32 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"joshua@christetulit.org", "password"=>"[FILTERED]", "user"=>{"username"=>"joshua@christetulit.org"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joshua@christetulit.org"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `login'
+Completed 200 OK in 296ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 873)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-06-01 17:22:32 -0500
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1065)
+
+
+Started GET "/profile" for 192.168.0.101 at 2020-06-01 17:47:11 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 814)
+
+
+Started POST "/profile/devices" for 192.168.0.101 at 2020-06-01 17:47:11 -0500
+Processing by UsersController#add_device as HTML
+  Parameters: {"push_token_id"=>"ExponentPushToken[4sUHReHx7BZatuUgkpORW-]", "user"=>{}}
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."push_token_id" = ? LIMIT ?[0m  [["push_token_id", "ExponentPushToken[4sUHReHx7BZatuUgkpORW-]"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `add_device'
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 4900)
+
+
+Started GET "/dogs" for 192.168.0.105 at 2020-06-01 17:50:55 -0500
+Started GET "/profile" for 192.168.0.105 at 2020-06-01 17:50:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DogsController#index as */*
+  [1m[36mDog Load (0.6ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs"[0m
+  ↳ app/controllers/dogs_controller.rb:3:in `index'
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 2.2ms | Allocations: 4926)
+
+
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 38ms (Views: 0.5ms | ActiveRecord: 6.5ms | Allocations: 4514)
+
+
+Started PATCH "/dogs/4" for 192.168.0.105 at 2020-06-01 17:51:02 -0500
+Processing by DogsController#update as */*
+  Parameters: {"likes"=>4, "id"=>"4", "dog"=>{"likes"=>4}}
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:7:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDog Update (7.6ms)[0m  [1m[33mUPDATE "dogs" SET "likes" = ? WHERE "dogs"."id" = ?[0m  [["likes", 4], ["id", 4]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/dogs_controller.rb:13:in `update'
+Completed 200 OK in 358ms (Views: 0.3ms | ActiveRecord: 12.1ms | Allocations: 19844)
+
+
+Started PATCH "/dogs/6" for 192.168.0.101 at 2020-06-01 17:53:15 -0500
+Processing by DogsController#update as HTML
+  Parameters: {"likes"=>1, "id"=>"6", "dog"=>{"likes"=>1}}
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:7:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDog Update (0.5ms)[0m  [1m[33mUPDATE "dogs" SET "likes" = ? WHERE "dogs"."id" = ?[0m  [["likes", 1], ["id", 6]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/dogs_controller.rb:13:in `update'
+Completed 200 OK in 261ms (Views: 0.6ms | ActiveRecord: 2.4ms | Allocations: 11025)
+
+
+Started PATCH "/dogs/4" for 192.168.0.105 at 2020-06-01 17:53:29 -0500
+Processing by DogsController#update as */*
+  Parameters: {"likes"=>5, "id"=>"4", "dog"=>{"likes"=>5}}
+  [1m[36mDog Load (0.2ms)[0m  [1m[34mSELECT "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:7:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDog Update (0.7ms)[0m  [1m[33mUPDATE "dogs" SET "likes" = ? WHERE "dogs"."id" = ?[0m  [["likes", 5], ["id", 4]]
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dogs_controller.rb:9:in `update'
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/dogs_controller.rb:13:in `update'
+Completed 200 OK in 257ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 11256)
+
+
