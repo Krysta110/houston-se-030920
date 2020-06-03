@@ -1,26 +1,3 @@
-class Dog
-
-    def initialize(options)
-        @sound = "Woof"
-        @first_name = options[:first_name]
-        @last_name = options[:last_name]
-        # "#{@first_name} #{@last_name}"
-    end
-
-    def bark
-        p @sound
-    end
-
-end
-
-tess = Dog.new({ first_name: "Tess", last_name: "Miles" })
-tilly = Dog.new({ first_name: "Tilly", last_name: "Miles" })
-
-p tess
-
-
-
-
 # $tilly = {
 #     sound: 'Woof',
 #     first_name: 'Tilly',
@@ -33,13 +10,44 @@ p tess
 # end
 
 
-# $tess = {
-#     sound: 'Woof',
-#     first_name: 'Tess',
-#     last_name: 'Miles',
-#     full_name: 'Tess Miles'
-# }
+class Dog 
 
-# def tess_bark()
-#     puts $tess[:sound]
+    def initialize(name, sound)
+        @name = name
+        @sound = sound
+    end
+
+    def bark()
+        puts @sound
+    end
+
+end
+
+tess = Dog.new("Tess", "Woof")
+tilly = Dog.new("Tilly", "Bark")
+annie = Dog.new("Annie", "Arf")
+dog_doe = Dog.new(nil, "Yip")
+
+p tess
+p dog_doe
+
+
+# class Dog 
+
+#     def initialize(dog_attributes)
+#         @name = dog_attributes[:name]
+#         @sound = dog_attributes[:sound]
+#     end
+
+#     def bark()
+#         puts @sound
+#     end
+
 # end
+
+# tess = Dog.new({ name: "Tess", sound: 'Woof'})
+# tilly = Dog.new({ sound: 'Bark', name: 'Tilly' })
+# annie = Dog.new({ name: "Annie", sound: 'Yip yip'})
+
+
+# annie.bark()
