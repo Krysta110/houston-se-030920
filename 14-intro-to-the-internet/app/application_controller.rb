@@ -1,8 +1,13 @@
 class ApplicationController < Sinatra::Base
 
-    get('/hello-world') do 
-       "Hello World!!!!!"
+    get('/hello') do 
+        "Hi Guys!"
     end
 
+    # post
+
+    # patch
+
+    #
 
 end

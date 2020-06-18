@@ -9,19 +9,19 @@
 
 ### Learning Goals
 
-- Explain the role of a Server and Client in the context of the internet
-- Identify the components of an HTTP Request and Response
-- Use Sinatra to to respond to an HTTP Request
+* Explain the role of a Server and Client in the context of the internet
+* Identify the components of an HTTP Request and Response
+* Use Sinatra to to respond to an HTTP Request
 
 
 
-### Explain the role of a Server and Client in the context of the internet
+###Explain the role of a Server and Client in the context of the internet
 
-- Draw the diagram
+* Draw the diagram
 
 
 
-### Identify the components of an HTTP Request and Response
+###Identify the components of an HTTP Request and Response
 
 - URL
 - Method
@@ -42,7 +42,7 @@ Run:
 
 ### Use Sinatra to to respond to an HTTP Request
 
-- Explain the uses of 
+* Explain the uses of 
   - Rack
   - Shotgun
   - Sinatra
